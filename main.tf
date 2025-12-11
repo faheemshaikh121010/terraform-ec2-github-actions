@@ -6,7 +6,14 @@ terraform {
     }
   }
 
-  backend "local" {}
+  #backend "local" {}
+  backend "s3" {
+    bucket         = "terraform-state-faheem-1210"
+    key            = "ec2/terraform.tfstate"
+    region         = "ap-south-1"
+    use_lockfile   = true   # replaces dynamodb_table
+    
+  }
 }
 
 provider "aws" {
