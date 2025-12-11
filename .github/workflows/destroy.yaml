@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
 
 
+permissions:
+  id-token: write # REQUIRED for OIDC
+  contents: read # REQUIRED to checkout the repo
+
 jobs:
   destroy:
     runs-on: ubuntu-latest
