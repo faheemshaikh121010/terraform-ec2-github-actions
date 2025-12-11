@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "ami" {
-  default = "ami-0e4e4b2f9c8e9a66f"  # Amazon Linux 2 (Mumbai)
+  default = "ami-068c0051b15cdb816"  # Amazon Linux 2 (Mumbai)
 }
 
 variable "instance_type" {
